@@ -21,7 +21,7 @@ export default function Header() {
         </ul>
       </menu>
 
-      <button className={style.header__buttom}>
+      <button className={style.header__buttom + " " + style["header__buttom--font"]}>
         Get Started
       </button>
     </header>
