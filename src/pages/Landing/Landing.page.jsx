@@ -4,7 +4,9 @@ import Header from './components/Header'
 export default function Landing() {
   return (
     <div className={style.content}>
-      <Header></Header>
+      <div className={style.content__header}>
+        <Header></Header>
+      </div>
       
       <div className={style.content__footer}></div>
     </div>

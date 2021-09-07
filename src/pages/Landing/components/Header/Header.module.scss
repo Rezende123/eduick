@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1 1 1;
+    grid-template-areas: 'image menu buttom';
+
+    .header__image {
+        grid-area: image;
+        height:  22px;
+
+        justify-self: flex-end;
+        align-self: center;
+    }
+
+    .header__menu {
+        grid-area: menu;
+
+        align-self: flex-start;
+    }
+
+    .header__buttom {
+        grid-area: buttom;
+
+        align-self: flex-start;
+    }   
+}
