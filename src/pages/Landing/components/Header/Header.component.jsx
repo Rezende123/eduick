@@ -12,16 +12,13 @@ export default function Header() {
       </figure>
 
       <menu className={style.header__menu}>
-        <ul className={
-          style["header__menu--flex"] + " " +
-          style["header__menu--style-type"]
-        }>
+        <ul className={`${style["header__menu--flex"]} ${style["header__menu--style-type"]}`}>
           <li>How it works</li>
           <li>About Us</li>
         </ul>
       </menu>
 
-      <button className={style.header__buttom + " " + style["header__buttom--font"]}>
+      <button className={`${style.header__buttom} ${style["header__buttom--font"]}`}>
         Get Started
       </button>
     </header>
