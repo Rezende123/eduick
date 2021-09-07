@@ -2,4 +2,26 @@
 
 .content {
     background-image: linear-gradient($color_gradient_primary_top, $color_gradient_primary_bottom);
+    height: 100%;
+
+    .content__header {
+        grid-area: header;
+    }
+    .content__main {
+        grid-area: main;
+    }
+    .content__footer {
+        height: 60%;
+        background-color: $color_secundary;
+        grid-area: footer;
+
+        align-self: flex-end;
+    }
+
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+
 }
