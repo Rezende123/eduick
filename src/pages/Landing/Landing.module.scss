@@ -1,0 +1,5 @@
+@import "../../styles/variables.scss";
+
+.content {
+    background-image: linear-gradient($color_gradient_primary_top, $color_gradient_primary_bottom);
+}
