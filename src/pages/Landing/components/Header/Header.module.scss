@@ -2,7 +2,7 @@
     width: 100%;
 
     display: grid;
-    grid-template-columns: 1 1 1;
+    grid-template-columns: 2fr 1fr 2fr;
     grid-template-areas: 'image menu buttom';
 
     .header__image {
@@ -15,10 +15,28 @@
 
     .header__menu {
         grid-area: menu;
-
         align-self: flex-start;
-    }
+        padding-left: 5px;
 
+        ul.header__menu--flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            padding-left: 5px;
+        }
+        ul.header__menu--flex li {
+            flex: 1;
+            margin: 5px;
+        }
+        ul.header__menu--style-type li {
+            list-style-type: none;
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+    }
+    
     .header__buttom {
         grid-area: buttom;
 

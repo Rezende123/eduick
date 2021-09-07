@@ -12,7 +12,10 @@ export default function Header() {
       </figure>
 
       <menu className={style.header__menu}>
-        <ul>
+        <ul className={
+          style["header__menu--flex"] + " " +
+          style["header__menu--style-type"]
+        }>
           <li>How it works</li>
           <li>About Us</li>
         </ul>
