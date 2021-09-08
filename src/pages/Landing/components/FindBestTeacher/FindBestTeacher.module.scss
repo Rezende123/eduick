@@ -1,0 +1,22 @@
+@import "../../../../styles/variables.scss";
+
+.context {
+  &__title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: -0.06em;
+
+    color: $color_white; 
+
+    &--highlight {
+      color: $color_tertiary_light;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      line-height: 57px;
+    }
+  }
+}

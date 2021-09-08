@@ -3,9 +3,10 @@ import style from './FindBestTeacher.module.scss'
 export default function FindBestTeacher() {
     return (
         <main>
-            <section>
-                <h1>
-                    Find your <br/> best teacher
+            <section className={style.context}>
+                <h1 className={style.context__title}>
+                    Find your <br/>
+                    <span className={style["context__title--highlight"]}>best teacher</span>
                 </h1>
 
                 <p>
