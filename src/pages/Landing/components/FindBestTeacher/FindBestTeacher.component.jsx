@@ -14,7 +14,7 @@ export default function FindBestTeacher() {
                     or a teacher trying to find great students for your customised private lessons!
                 </p>
             </section>
-            <section>
+            <section className={style["search-form"]}>
                 <form>
                     <input placeholder="Type here what are you looking for" type="text"/>
                     <div>
