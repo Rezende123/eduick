@@ -9,12 +9,25 @@
   }
   &__main {
     grid-area: main;
+    display: grid;
+
+    grid-template-areas: "shape1 form shape2";
+    grid-template-columns: 40% 35% 25%;
+
+    #shape-1 {
+        grid-area: shape1;
+    }
+    #form {
+        grid-area: form;
+    }
+    #shape-2 {
+        grid-area: shape2;
+    }
   }
   &__footer {
     height: 60%;
     background-color: $color_secundary;
     grid-area: footer;
-
     align-self: flex-end;
   }
 
@@ -23,5 +36,6 @@
     "header header header"
     "main main main"
     "footer footer footer";
+  grid-template-rows: 20% 40% 40%;
 
 }

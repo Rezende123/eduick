@@ -1,6 +1,8 @@
 import style from './Landing.module.scss'
 import Header from './components/Header'
 import FindBestTeacher from './components/FindBestTeacher'
+import Image from 'next/image'
+import shape1 from '../../../public/images/group_1_descktop.svg'
 
 export default function Landing() {
   return (
@@ -10,7 +12,15 @@ export default function Landing() {
       </div>
 
       <div className={style.content__main}>
-        <FindBestTeacher></FindBestTeacher>
+        <figure id={style["shape-1"]}>
+          <Image src={shape1}/>
+        </figure>
+        <div id={style["form"]}>
+          <FindBestTeacher></FindBestTeacher>
+        </div>
+        <figure id={style["shape-2"]}>
+          <Image src={shape1}/>
+        </figure>
       </div>
       
       <footer className={style.content__footer}></footer>
