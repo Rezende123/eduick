@@ -32,7 +32,7 @@
 
     &--style-type li {
       list-style-type: none;
-      font-family: 'Open Sans';
+      font-family: '$font_open_sans';
       font-weight: 400;
       font-size: 14px;
       color: #FFFFFF;
@@ -52,7 +52,7 @@
 
     &--font {
       color: $color_primary;
-      font-family: Open Sans;
+      font-family: $font_open_sans;
       font-weight: bold;
       font-size: 14px;
       line-height: 19px;
