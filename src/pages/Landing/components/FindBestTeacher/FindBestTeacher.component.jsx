@@ -18,13 +18,15 @@ export default function FindBestTeacher() {
                 <form>
                     <input placeholder="Type here what are you looking for" type="text"/>
                     <div>
-                        <div>
+                        <div className={style["search-form__options"]}>
+                            <input name="search-by" id="teacher" type="radio"/>
+                            <span className={style["search-form__options--checkmarck"]}></span>
                             <label htmlFor="teacher">i’m a teacher</label>
-                            <input id="teacher" type="radio"/>
                         </div>
-                        <div>
-                            <label htmlFor="teacher">i’m a student</label>
-                            <input id="teacher" type="radio"/>
+                        <div className={style["search-form__options"]}>
+                            <input name="search-by" id="student" type="radio"/>
+                            <span className={style["search-form__options--checkmarck"]}></span>
+                            <label htmlFor="student">i’m a student</label>
                         </div>
                         <button>
                             Search
