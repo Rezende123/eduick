@@ -4,7 +4,7 @@ import FindBestTeacher from './components/FindBestTeacher'
 
 export default function Landing() {
   return (
-    <div className={style.content}>
+    <section className={style.content}>
       <div className={style.content__header}>
         <Header></Header>
       </div>
@@ -13,8 +13,8 @@ export default function Landing() {
         <FindBestTeacher></FindBestTeacher>
       </div>
       
-      <div className={style.content__footer}></div>
-    </div>
+      <footer className={style.content__footer}></footer>
+    </section>
   )
 }
   
