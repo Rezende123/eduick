@@ -39,10 +39,10 @@
   }
 
   input {
-    background: #7955E8;
-    border: 1px solid #A68EEF;
+    background: $color_dark_primary;
+    border: 1px solid $color_light_primary;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: $border_radius;
     color: $color_white; 
     font-family: $font_open_sans;
 
@@ -73,7 +73,7 @@
     height: 56px;
 
     background: rgba(121, 85, 232, 0.3);
-    border-radius: 4px;
+    border-radius: $border_radius;
 
     display: flex;
     align-items: center;
@@ -99,7 +99,7 @@
     }
 
     &--checkmarck {
-      background: #7955E8;
+      background: $color_dark_primary;
       width: 18px;
       height: 18px;
       border-radius: 50%;
@@ -115,7 +115,7 @@
       height: 18px;
 
       &:checked ~ .search-form__options--checkmarck {
-        background-color: yellow;
+        background-color: $color_tertiary;
         background-repeat: no-repeat;
         background-image: url("../../../../../public/images/circle_checked.svg");
         background-size: 12px 10px;
@@ -123,10 +123,10 @@
 
         &::before {
           content: "";
-          background: #7955E8;
-          border: 1px solid #A68EEF;
+          background: $color_dark_primary;
+          border: 1px solid $color_light_primary;
           box-sizing: border-box;
-          border-radius: 4px;
+          border-radius: $border_radius;
           position: absolute;
           width: 100%;
           height: 100%;
