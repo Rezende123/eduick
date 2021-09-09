@@ -16,12 +16,26 @@
 
     #shape-1 {
         grid-area: shape1;
+        margin: 0;
+        justify-self: end;
+        margin-right: 10px;
+
+        & > div {
+          max-width: 530px !important;
+        }
     }
     #form {
         grid-area: form;
     }
     #shape-2 {
         grid-area: shape2;
+
+        & > div {
+          margin-left: -70px !important;
+          height: 605px;
+          width: 429px;
+          max-width: none !important;
+        }
     }
   }
   &__footer {
