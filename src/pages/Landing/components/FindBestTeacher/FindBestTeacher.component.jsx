@@ -28,7 +28,7 @@ export default function FindBestTeacher() {
                             <span className={style["search-form__options--checkmarck"]}></span>
                             <label htmlFor="student">i’m a student</label>
                         </div>
-                        <button className={`${style["search-form__buttom"]} ${style["search-form__buttom--font"]}`}>
+                        <button className={`landing_page_buttom landing_page_buttom--font ${style["search-form__buttom"]}`}>
                             Search
                         </button>
                     </div>

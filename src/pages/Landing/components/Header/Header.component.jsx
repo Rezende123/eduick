@@ -18,7 +18,7 @@ export default function Header() {
         </ul>
       </menu>
 
-      <button className={`${style.header__buttom} ${style["header__buttom--font"]}`}>
+      <button className={`landing_page_buttom landing_page_buttom--font ${style.header__buttom}`}>
         Get Started
       </button>
     </header>
