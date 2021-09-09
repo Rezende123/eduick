@@ -17,7 +17,7 @@ export default function FindBestTeacher() {
             <section className={style["search-form"]}>
                 <form>
                     <input placeholder="Type here what are you looking for" type="text"/>
-                    <div>
+                    <div className={style["search-form__row"]}>
                         <div className={style["search-form__options"]}>
                             <input name="search-by" id="teacher" type="radio"/>
                             <span className={style["search-form__options--checkmarck"]}></span>

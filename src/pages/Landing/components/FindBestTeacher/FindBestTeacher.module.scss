@@ -61,13 +61,17 @@
     }
   }
 
+  &__row {
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr;
+    margin-top: 30px;
+  }
+
   &__options {
     width: 162px;
     height: 56px;
 
     background: rgba(121, 85, 232, 0.3);
-    border: 1px solid #A68EEF;
-    box-sizing: border-box;
     border-radius: 4px;
 
     display: flex;
