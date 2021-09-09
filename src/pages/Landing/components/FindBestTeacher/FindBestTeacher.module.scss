@@ -146,3 +146,16 @@
     height: 56px;
   }
 }
+
+@media (max-width: 1000px) {
+  .search-form {
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__buttom {
+      grid-column: span 2;
+    }
+  }
+}

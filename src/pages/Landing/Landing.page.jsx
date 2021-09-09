@@ -13,12 +13,12 @@ export default function Landing() {
       </div>
 
       <div className={style.content__main}>
-        <figure id={style["shape-1"]}>
-          <Image src={shape1}/>
-        </figure>
         <div id={style["form"]}>
           <FindBestTeacher></FindBestTeacher>
         </div>
+        <figure id={style["shape-1"]}>
+          <Image src={shape1}/>
+        </figure>
         <figure id={style["shape-2"]}>
           <Image src={shape2} height="700"/>
         </figure>

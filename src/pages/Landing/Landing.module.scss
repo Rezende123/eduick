@@ -3,6 +3,7 @@
 .content {
   background-image: linear-gradient($color_gradient_primary_top, $color_gradient_primary_bottom);
   height: 100%;
+  overflow: hidden;
 
   &__header {
     grid-area: header;
@@ -52,4 +53,54 @@
     "footer footer footer";
   grid-template-rows: 20% 40% 40%;
 
+}
+
+@media (max-width: 1300px) {
+  .content {
+    &__footer {
+      height: 20%;
+    }
+
+    &__main {
+      grid-template-columns: 50% 35% 15%;
+    }
+
+    #shape-1 > div {
+      max-width: 630px !important;
+      margin-top: 100px !important;
+    }
+
+    #shape-2 > div {
+      margin-left: 0px !important;
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .content {
+    &__main {
+      grid-template-columns: 50% 50%;
+      margin: 20px;
+    }
+
+    #shape-1 > div {
+      max-width: 630px !important;
+      margin-top: 100px !important;
+    }
+
+    #shape-2 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .content {
+    overflow-y: scroll;
+
+    &__main {
+      display: inline;
+    }
+  }
 }
