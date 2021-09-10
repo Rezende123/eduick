@@ -1,6 +1,9 @@
+@import "../../../../styles/variables.scss";
+
 .header {
   display: flex;
   justify-content: space-between;
+  padding-top: 11px;
     
   &__logo {
     height:  22px;
@@ -28,7 +31,7 @@
     & li {
       text-align: center;
       list-style-type: none;
-      font-family: '$font_open_sans';
+      font-family: $font_open_sans;
       font-weight: 400;
       font-size: 21px;
       color: #FFFFFF;
