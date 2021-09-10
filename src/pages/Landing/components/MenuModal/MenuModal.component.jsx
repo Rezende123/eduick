@@ -1,5 +1,14 @@
-export default function MenuModal() {
+import Modal from "react-modal";
+
+export default function MenuModal(props) {
     return (
-        <div></div>
+        <Modal className="modal-container custom-map-modal"
+            isOpen={props.show}
+            // onHide={this.toggleState}
+            animation={true}
+        >
+            <h1>Oi</h1>
+        </Modal>
+  
     )
 }
