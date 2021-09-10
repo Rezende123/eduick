@@ -9,11 +9,8 @@ import { useState } from 'react'
 export default function MenuModal() {
   Modal.setAppElement('section')
 
-  const hideMenuModal = () => {
-    setShow(!show)
-  }
-
   const [show, setShow] = useState(false)
+  const hideMenuModal = () => setShow(!show)
 
   return (
     <div>
