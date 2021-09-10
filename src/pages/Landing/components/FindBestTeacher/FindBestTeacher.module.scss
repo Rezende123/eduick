@@ -159,3 +159,9 @@
     }
   }
 }
+
+@media (max-width: 830px) {
+  .context p {
+    display: none;
+  }
+}
