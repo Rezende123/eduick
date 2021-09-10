@@ -21,9 +21,7 @@ export default function Header() {
       </figure>
 
       <figure className={style.header__image}>
-        <Image
-          src={logo}
-          alt="Logo EDUICK"/>
+        <Image src={logo}/>
       </figure>
 
       <menu className={style.header__menu}>
