@@ -164,4 +164,23 @@
   .context p {
     display: none;
   }
+
+  .context__title {
+    font-size: 28px;
+  }
+
+  .search-form {
+    input {
+      height: 48px;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    &__options {
+      label {
+        font-size: 10px;
+      }
+    }
+  }
 }
