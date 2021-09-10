@@ -5,20 +5,22 @@ import logo from '../../../../../public/images/logo.svg'
 import close from '../../../../../public/icons/close_big.svg'
 
 export default function MenuModal(props) {
+    Modal.setAppElement('section');
+
     return (
-        <Modal className="modal-container custom-map-modal"
+        <Modal className={`${style["modal-container"]} ${style["custom-map-modal"]}`}
             isOpen={props.show}
             animation={true}
         >
             <section>
-                <head className={style.header}>
+                <header className={style.header}>
                     <figure className={style.header__logo}>
                         <Image src={logo}/>
                     </figure>
-                    <figure className={style.header__close}>
+                    <figure>
                         <Image src={close}/>
                     </figure>
-                </head>
+                </header>
                 <main>
                     
                 </main>

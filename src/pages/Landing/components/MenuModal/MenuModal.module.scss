@@ -1,12 +1,18 @@
 .header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
     
-    &__logo {
-        height:  22px;
-    }
+  &__logo {
+    height:  22px;
+  }
+}
 
-    &__close {
-        
-    }
+.custom-map-modal {
+  background: #200E64;
+  opacity: 0.95;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

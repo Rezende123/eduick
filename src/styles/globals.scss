@@ -20,6 +20,10 @@ body {
   right: 0;
 }
 
+.ReactModal__Overlay {
+  z-index: 2;
+}
+
 .landing_page_buttom {
   background-color: $color_tertiary;
   box-shadow: 1px 3px 11px -3px rgba(255, 231, 150, 0.45);
