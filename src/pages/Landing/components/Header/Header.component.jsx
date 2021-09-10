@@ -1,10 +1,15 @@
 import style from './Header.module.scss'
 import Image from 'next/image'
 import logo from '../../../../../public/images/logo.svg'
+import hamburger from '../../../../../public/icons/hamburger.svg'
 
 export default function Header() {
   return (
     <header className={style.header}>
+      <figure className={style.header__hamburger}>
+        <Image src={hamburger}/>
+      </figure>
+
       <figure className={style.header__image}>
         <Image
           src={logo}

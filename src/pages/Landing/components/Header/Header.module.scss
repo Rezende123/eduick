@@ -6,14 +6,19 @@
   grid-template-columns: 2fr 1fr 3fr;
   grid-template-areas: 'image menu buttom';
 
-  .header__image {
+  &__hamburger {
+    display: none;
+    grid-area: hamburger;
+  }
+
+  &__image {
     grid-area: image;
     height:  22px;
     justify-self: flex-end;
     align-self: center;
   }
 
-  .header__menu {
+  &__menu {
     grid-area: menu;
     align-self: flex-start;
     padding-left: 5px;
@@ -39,11 +44,41 @@
     }
   }
   
-  .header__buttom {
+  &__buttom {
     grid-area: buttom;
     align-self: center;
     justify-self: center;
     width: 165px;
     height: 48px;
+  }
+}
+
+
+@media (max-width: 830px) {
+  .header {
+    grid-template-columns: 1fr 6fr;
+    grid-template-areas: 'hamburger image';
+
+    &__buttom {
+      display: none;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__hamburger {
+      display: block;
+      align-self: center;
+      justify-self: center;
+      margin-right: 5px;
+      margin-left: 15px;
+    }
+
+    &__image {
+      align-self: center;
+      justify-self: start;
+      margin-left: 15px;
+    }
   }
 }
