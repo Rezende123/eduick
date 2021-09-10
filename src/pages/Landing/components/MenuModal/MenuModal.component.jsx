@@ -12,7 +12,7 @@ export default function MenuModal(props) {
             isOpen={props.show}
             animation={true}
         >
-            <section>
+            <section className={style.container}>
                 <header className={style.header}>
                     <figure className={style.header__logo}>
                         <Image src={logo}/>
@@ -21,8 +21,15 @@ export default function MenuModal(props) {
                         <Image src={close}/>
                     </figure>
                 </header>
-                <main>
-                    
+                <main className={style.menu}>
+                    <ul className={style["menu__list-pages"]}>
+                        <li>How it works</li>
+                        <li>About Us</li>
+                    </ul>
+
+                    <button className={`landing_page_buttom landing_page_buttom--font ${style["menu__buttom"]}`}>
+                        Get Started
+                    </button>
                 </main>
             </section>
         </Modal>
