@@ -3,10 +3,9 @@ import Image from 'next/image'
 import style from './MenuModal.module.scss'
 import logo from '../../../../../public/images/logo.svg'
 import close from '../../../../../public/icons/close_big.svg'
-import hamburger from '../../../../../public/icons/hamburger.svg'
 import { useState } from 'react'
 
-export default function MenuModal() {
+export default function MenuModal(props) {
   Modal.setAppElement('section')
 
   const [show, setShow] = useState(false)
@@ -15,7 +14,7 @@ export default function MenuModal() {
   return (
     <div>
       <div onClick={hideMenuModal}>
-        <Image src={hamburger}/>
+        {props.children}
       </div>
       <Modal className={`${style["modal-container"]} ${style["custom-map-modal"]}`}
         isOpen={show}

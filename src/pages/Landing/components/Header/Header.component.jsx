@@ -1,6 +1,7 @@
 import style from './Header.module.scss'
 import Image from 'next/image'
 import logo from '../../../../../public/images/logo.svg'
+import hamburger from '../../../../../public/icons/hamburger.svg'
 import MenuModal from '../MenuModal'
 
 export default function Header() {
@@ -9,6 +10,7 @@ export default function Header() {
     <header className={style.header}>
       <figure className={style.header__hamburger}>
         <MenuModal>
+          <Image src={hamburger}/>
         </MenuModal>
       </figure>
 
