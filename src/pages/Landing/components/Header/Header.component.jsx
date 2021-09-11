@@ -2,8 +2,6 @@ import style from './Header.module.scss'
 import Image from 'next/image'
 import logo from '../../../../../public/images/logo.svg'
 import MenuModal from '../MenuModal'
-import { useState } from 'react';
-
 
 export default function Header() {
 
