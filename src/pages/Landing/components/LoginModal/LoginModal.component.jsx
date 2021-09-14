@@ -18,9 +18,12 @@ export default function LoginModal(props) {
         isOpen={show}
         animation={true}
       >
-        <section className={style.content}>
+        <section className={style.context}>
           <header>
-            
+              <h1 className={style.context__title}>
+                Get Started <br/>
+                <span className={style["context__title--highlight"]}>Just Login</span>
+              </h1>            
           </header>
           <main>
             
