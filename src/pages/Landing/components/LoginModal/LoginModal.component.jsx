@@ -26,7 +26,16 @@ export default function LoginModal(props) {
               </h1>            
           </header>
           <main>
-            
+            <form action="javascript:void(0);">
+              <div className={style["context__field"]}>
+                <label htmlFor="username">Username:</label>
+                <input autocomplete="off" type="text" name="username" id="username" />
+              </div>
+              <div className={style["context__field"]}>
+                <label htmlFor="password">Password:</label>
+                <input autocomplete="off" type="password" name="password" id="password" />
+              </div>
+            </form>
           </main> 
         </section>          
       </Modal>

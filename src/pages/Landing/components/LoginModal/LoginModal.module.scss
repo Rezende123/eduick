@@ -44,4 +44,37 @@
       line-height: 57px;
     }
   }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 46px;
+
+    *:focus {
+      outline: none;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-family: $font_open_sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 191.68%;
+      color: #FFFFFF;
+    }
+
+    input {
+      width: 445px;
+      height: 56px;
+      background: rgba(255, 255, 255, 0.24);
+      border: 1px solid rgb(255, 255, 255, 0.4);
+      box-sizing: border-box;
+      border-radius: 4px;
+      color: $color_white; 
+      font-family: $font_open_sans;
+      font-size: 16px;
+      padding: 15px;
+    }
+  }
 }
