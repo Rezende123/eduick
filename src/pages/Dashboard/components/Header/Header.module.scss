@@ -3,9 +3,18 @@
 .header {
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr 6fr;
-  grid-template-areas: 'image menu buttom';
+  grid-template-columns: 2fr 3fr 5fr 10fr;
+  grid-template-areas: 'points image menu buttom';
 
+
+  &__points {
+    grid-area: points;
+    height:  22px;
+    justify-self: flex-end;
+    align-self: center;
+    margin-bottom: 23px;
+    margin-right: 0px;
+  }
 
   &__image {
     grid-area: image;
