@@ -6,32 +6,34 @@ import MenuModal from '../MenuModal'
 import LoginModal from '../LoginModal'
 
 export default function Header() {
-
   return (
     <header className={style.header}>
       <figure className={style.header__hamburger}>
         <MenuModal>
-          <Image src={hamburger}/>
+          <Image src={hamburger} />
         </MenuModal>
       </figure>
 
       <figure className={style.header__image}>
-        <Image src={logo}/>
+        <Image src={logo} />
       </figure>
 
       <menu className={style.header__menu}>
-        <ul className={`${style["header__menu--flex"]} ${style["header__menu--style-type"]}`}>
+        <ul
+          className={`${style['header__menu--flex']} ${style['header__menu--style-type']}`}
+        >
           <li>How it works</li>
           <li>About Us</li>
         </ul>
       </menu>
 
       <LoginModal>
-        <button className={`landing_page_buttom landing_page_buttom--font ${style.header__buttom}`}>
+        <button
+          className={`landing_page_buttom landing_page_buttom--font ${style.header__buttom}`}
+        >
           Get Started
         </button>
       </LoginModal>
     </header>
-
   )
 }

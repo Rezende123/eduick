@@ -7,16 +7,14 @@ export default function CardModules() {
   return (
     <div className={style.card}>
       <figure className={style.card__picture}>
-        <Image src={picture}/>
+        <Image src={picture} />
       </figure>
       <div className={style.card__info}>
         <figure>
-          <Image src={stars}/>
+          <Image src={stars} />
         </figure>
         <button>
-          <span>
-            10  lessons
-          </span>
+          <span>10 lessons</span>
         </button>
       </div>
       <h2 className={style.card__title}>

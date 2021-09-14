@@ -4,16 +4,15 @@ function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = global || window
   return {
     width,
-    height
+    height,
   }
 }
 
 const useWindowDimensions = () => {
-
   const [windowDimensions, setWindowDimensions] = useState(true)
 
   useEffect(() => {
-    function handleResize () {
+    function handleResize() {
       setWindowDimensions(getWindowDimensions())
     }
 
