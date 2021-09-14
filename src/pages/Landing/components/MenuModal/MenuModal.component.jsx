@@ -25,7 +25,7 @@ export default function MenuModal(props) {
             <figure className={style.header__logo}>
               <Image src={logo} />
             </figure>
-            <figure onClick={hideMenuModal}>
+            <figure className={style.header__close} onClick={hideMenuModal}>
               <Image src={close} />
             </figure>
           </header>
