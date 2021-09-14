@@ -9,6 +9,18 @@ export default function Dashboard() {
       </div>
 
       <main className={style.content__main}>
+        <div className={style["content__presentation-card"]}>
+          <figure></figure>
+          <article>
+            <h1 className={style["content__presentation-card--title"]}>
+              Hello <strong>Student.</strong>
+            </h1>
+            <p className={style["content__presentation-card--text"]}>
+              Whether you are a student trying to find your ideal private language teachers/tutors
+            </p>
+          </article>
+          <figure></figure>
+        </div>
       </main>
 
       <footer className={style.content__footer}>
