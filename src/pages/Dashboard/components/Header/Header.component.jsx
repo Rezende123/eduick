@@ -4,12 +4,39 @@ import Image from 'next/image'
 import logo from '../../../../../public/images/logo.svg'
 import points from '../../../../../public/images/points.svg'
 import profile from '../../../../../public/images/profile.svg'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = global;
+  return {
+    width,
+    height
+  };
+}
 
 export default function Header() {
+  Modal.setAppElement('button')
+
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimensions(getWindowDimensions())
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const [showBtn, setShowBtn] = useState(false)
-  const hideBtn = () => setShowBtn(!showBtn)
+  const hideBtn = () => {
+    const { width } = windowDimensions
+    const mobileSize = 830
+
+    if (width <= mobileSize) {
+      setShowBtn(!showBtn)
+    }
+  }
   const arrowDirection = () => showBtn ? style["header__profile--arrow-up"] : style["header__profile--arrow-down"]
 
   return (
