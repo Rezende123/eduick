@@ -31,14 +31,14 @@ export default function LoginModal(props) {
               </h1>            
           </header>
           <main>
-            <form action="javascript:void(0);">
+            <form action="#!">
               <div className={style["context__field"]}>
                 <label htmlFor="username">Username:</label>
-                <input autocomplete="off" type="text" name="username" id="username" />
+                <input autoComplete="username" type="text" name="username" id="username" />
               </div>
               <div className={style["context__field"]}>
                 <label htmlFor="password">Password:</label>
-                <input autocomplete="off" type={typePassword()} name="password" id="password" />
+                <input autoComplete="new-password" type={typePassword()} name="password" id="password" />
                 <i className={style["context__field--icon-eye"]} onClick={hidePassword}></i>
               </div>
             </form>
