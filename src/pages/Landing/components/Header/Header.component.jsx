@@ -3,6 +3,7 @@ import Image from 'next/image'
 import logo from '../../../../../public/images/logo.svg'
 import hamburger from '../../../../../public/icons/hamburger.svg'
 import MenuModal from '../MenuModal'
+import LoginModal from '../LoginModal'
 
 export default function Header() {
 
@@ -25,9 +26,11 @@ export default function Header() {
         </ul>
       </menu>
 
-      <button className={`landing_page_buttom landing_page_buttom--font ${style.header__buttom}`}>
-        Get Started
-      </button>
+      <LoginModal>
+        <button className={`landing_page_buttom landing_page_buttom--font ${style.header__buttom}`}>
+          Get Started
+        </button>
+      </LoginModal>
     </header>
 
   )

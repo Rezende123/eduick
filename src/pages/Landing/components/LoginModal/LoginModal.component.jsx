@@ -1,5 +1,6 @@
 import Modal from "react-modal"
-import LoginModal from './LoginModal.module.scss'
+import { useState } from 'react'
+import style from './LoginModal.module.scss'
 
 export default function LoginModal(props) {
   Modal.setAppElement('section')
@@ -9,7 +10,7 @@ export default function LoginModal(props) {
 
   return (
     <div>
-      <div onClick={hideMenuModal}>
+      <div className={style["container"]} onClick={hideMenuModal}>
         {props.children}
       </div>
       <Modal
@@ -17,10 +18,12 @@ export default function LoginModal(props) {
         isOpen={show}
         animation={true}
       >
-        <section>
+        <section className={style.content}>
           <header>
+            
           </header>
           <main>
+            
           </main> 
         </section>          
       </Modal>
