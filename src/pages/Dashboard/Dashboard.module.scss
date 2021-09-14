@@ -104,7 +104,8 @@
 
     &__presentation-card {
       display: flex;
-      flex-direction: column;    
+      flex-direction: column;   
+      height: 165px; 
 
       &--fig1 {
         width: 64px;
