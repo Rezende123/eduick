@@ -86,9 +86,39 @@
   }
 }
 
-@media (max-width: 830px)  {
-  .content__footer span {
-    display: none;      
+@media (max-width: 1250px) {
+  .content__presentation-card--fig1 {
+    margin-left: 20px;
   }
+}
+
+@media (max-width: 830px)  {
+  .content {
+    &__footer span {
+      display: none;      
+    }
+
+    article {
+      margin: 20px;
+    }
+
+    &__presentation-card {
+      display: flex;
+      flex-direction: column;    
+
+      &--fig1 {
+        width: 64px;
+        height: 68px;
+        align-self: flex-end;
+        margin-bottom: -75px;
+        margin-top: -10px;
+      }
+
+      &--fig2 {
+        display: none;
+      }
+    }
+  }
+  
 }
 
