@@ -1,5 +1,7 @@
 import Modal from "react-modal"
 import { useState } from 'react'
+import Image from 'next/image'
+import close from '../../../../../public/icons/close_big.svg'
 import style from './LoginModal.module.scss'
 
 export default function LoginModal(props) {
@@ -25,10 +27,15 @@ export default function LoginModal(props) {
       >
         <section className={style.context}>
           <header>
-              <h1 className={style.context__title}>
-                Get Started <br/>
-                <span className={style["context__title--highlight"]}>Just Login</span>
-              </h1>            
+            <h1 className={style.context__title}>
+              Get Started <br/>
+              <span className={style["context__title--highlight"]}>Just Login</span>
+            </h1>
+            <figure className={style["context__close"]} onClick={hideMenuModal}>
+              <div className={style["context__close--circle"]} >
+                <Image src={close}/>
+              </div>
+            </figure>
           </header>
           <main>
             <form action="#!">

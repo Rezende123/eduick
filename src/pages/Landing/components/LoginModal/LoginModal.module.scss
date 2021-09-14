@@ -25,6 +25,29 @@
   max-width: 525px;
   max-height: 479px;
 
+  header {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  &__close {
+    justify-self: flex-end;
+    cursor: pointer;
+
+    &--circle {
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: #200E64;
+      width: 51px;
+      height: 51px;
+      display: flex;
+      justify-content: center;
+      margin-left: 16px;
+      margin-top: -40px;
+      position: absolute;
+    }
+  }
+
   &__title {
     margin: 40px;
     font-family: $font_poppins;
