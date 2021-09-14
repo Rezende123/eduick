@@ -76,5 +76,15 @@
       font-size: 16px;
       padding: 15px;
     }
+
+    &--icon-eye {
+      background: url("../../../../../public/icons/icon_eye.svg");
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 17px;
+      cursor: pointer;
+      align-self: flex-end;
+      margin-top: -34px;
+    }
   }
 }

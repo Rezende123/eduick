@@ -34,6 +34,7 @@ export default function LoginModal(props) {
               <div className={style["context__field"]}>
                 <label htmlFor="password">Password:</label>
                 <input autocomplete="off" type="password" name="password" id="password" />
+                <i className={style["context__field--icon-eye"]}></i>
               </div>
             </form>
           </main> 
