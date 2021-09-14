@@ -6,7 +6,12 @@ export default function LoginModal(props) {
   Modal.setAppElement('section')
 
   const [show, setShow] = useState(false)
+  const [showPassword, setShowPassword] = useState(false)
+
   const hideMenuModal = () => setShow(!show)
+  const hidePassword = () => setShowPassword(!showPassword)
+  const typePassword = () => showPassword ? 'text' : 'password'
+
 
   return (
     <div>
@@ -33,8 +38,8 @@ export default function LoginModal(props) {
               </div>
               <div className={style["context__field"]}>
                 <label htmlFor="password">Password:</label>
-                <input autocomplete="off" type="password" name="password" id="password" />
-                <i className={style["context__field--icon-eye"]}></i>
+                <input autocomplete="off" type={typePassword()} name="password" id="password" />
+                <i className={style["context__field--icon-eye"]} onClick={hidePassword}></i>
               </div>
             </form>
           </main> 
