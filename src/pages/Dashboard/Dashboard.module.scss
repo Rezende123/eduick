@@ -49,6 +49,9 @@
 
     width: 100%;
     margin: 24px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 5fr 3fr;
 
     &--title {
       font-family: $font_poppins;
@@ -68,6 +71,17 @@
       line-height: 160%;
       
       color: #343434;
+    }
+
+    &--fig1 {
+      width: 126px;
+      height: 150px;    
+      margin-left: -40px;
+    }
+
+    &--fig2 {
+      width: 332px;
+      height: 182px;   
     }
   }
 }
