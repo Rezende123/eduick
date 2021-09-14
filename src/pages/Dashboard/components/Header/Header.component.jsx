@@ -50,7 +50,7 @@ export default function Header() {
         className={`${style["modal-container"]} ${style["custom-map-modal"]}`}
         style={{
           overlay: {
-            top: 50,
+            top: '7%',
             backgroundColor: 'rgba(255, 255, 255, 0.8)'
           }
         }}
