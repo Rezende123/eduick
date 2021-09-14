@@ -22,6 +22,11 @@ export default function LoginModal(props) {
       </div>
       <Modal
         className={`${style["modal-container"]} ${style["custom-map-modal"]}`}
+        style={{
+          overlay: {
+            backgroundColor: 'rgba(32, 14, 100, 0.8)'
+          }
+        }}
         isOpen={show}
         animation={true}
       >
