@@ -121,3 +121,46 @@
     }
   }
 }
+
+
+@media (max-width: 1050px) {
+  .context {
+    &__field {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 830px) {
+  .context {
+    width: 100%;
+    height: 100%;
+    max-width: none !important;
+    max-height: none !important;
+
+    &__title {
+      font-size: 28px;
+      line-height: 118.5%;
+    }
+
+    &__close {
+      justify-self: flex-end;
+      cursor: pointer;
+  
+      &--circle {
+        background-color: #200E6400;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 15px;
+        position: relative;
+      }
+    }
+
+    &__buttom {
+      width: 100%;
+    }
+  }
+}
