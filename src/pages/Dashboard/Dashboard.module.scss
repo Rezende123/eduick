@@ -39,3 +39,10 @@
     justify-content: center;    
   }
 }
+
+@media (max-width: 830px)  {
+  .content__footer span {
+    display: none;      
+  }
+}
+

@@ -13,7 +13,7 @@ export default function Dashboard() {
 
       <footer className={style.content__footer}>
         <p>
-          Copyright © 2020 Eduick. Todos os direitos reservados.
+          Copyright © 2020 Eduick. <span>Todos os direitos reservados.</span>
         </p>
       </footer>
     </section>

@@ -92,6 +92,7 @@
   .header {
     grid-template-columns: 6fr 6fr;
     grid-template-areas: 'image profile';
+    height: 100%;
   
     &__points,
     &__menu,
@@ -101,13 +102,20 @@
 
     &__image {
       align-self: center;
-      justify-self: start;
+      justify-self: flex-start;
       margin-top: 0px;
       margin-left: 15px;
+      height: 15px;
+      width: auto;
       
       img {
         height: 15px;
       }
+    }
+
+    &__profile {
+      align-self: center;
+      justify-self: flex-end;
     }
   }
 }
