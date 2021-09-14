@@ -1,0 +1,61 @@
+@import "../../../../styles/variables.scss";
+
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 6fr;
+  grid-template-areas: 'image menu buttom';
+
+
+  &__image {
+    grid-area: image;
+    height:  22px;
+    justify-self: flex-end;
+    align-self: center;
+  }
+
+  &__menu {
+    grid-area: menu;
+    align-self: flex-start;
+    padding-left: 5px;
+    margin: 0px;
+
+    &--flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      padding-left: 5px;
+
+      & li {
+        flex: 1;
+        margin: 5px;
+      }    
+    }
+
+    &--style-type li {
+      list-style-type: none;
+      font-family: $font_open_sans;
+      font-weight: 400;
+      font-size: 14px;
+      color: $color_white;
+    }
+  }
+  
+}
+
+
+@media (max-width: 830px) {
+  .header {
+    grid-template-columns: 1fr 6fr;
+
+    &__menu {
+      display: none;
+    }
+
+    &__image {
+      align-self: center;
+      justify-self: start;
+      margin-left: 15px;
+    }
+  }
+}

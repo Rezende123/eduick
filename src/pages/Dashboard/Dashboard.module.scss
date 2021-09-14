@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.content {
+  background-image: linear-gradient($color_gradient_primary_top, $color_gradient_primary_bottom);
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  grid-template-rows: 7% 86% 7%;
+
+  &__header {
+    grid-area: header;
+  }
+
+  &__main {
+    grid-area: main;
+    background: #F1F5F7;
+  }
+
+  &__footer {
+    grid-area: footer;
+    background: #fff;
+  }
+}
