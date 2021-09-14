@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Image  from 'next/dist/client/image'
 import fig1 from '../../../public/images/dashboard_yellow.svg'
 import fig2 from '../../../public/images/dashboard_fig2.svg'
+import ellipsis from '../../../public/icons/ellipsis.svg'
 import CardModules from './components/CardModules'
 
 export default function Dashboard() {
@@ -39,6 +40,9 @@ export default function Dashboard() {
         <div className={style.content__cards}>
           {cards}
         </div>
+        <figure className={style.content__ellipsis}>
+          <Image src={ellipsis}/>
+        </figure>
       </main>
 
       <footer className={style.content__footer}>
