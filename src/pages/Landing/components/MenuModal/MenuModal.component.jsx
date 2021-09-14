@@ -3,6 +3,7 @@ import Image from 'next/image'
 import style from './MenuModal.module.scss'
 import logo from '../../../../../public/images/logo.svg'
 import close from '../../../../../public/icons/close_big.svg'
+import LoginModal from '../LoginModal'
 import { useState } from 'react'
 
 export default function MenuModal(props) {
@@ -35,9 +36,11 @@ export default function MenuModal(props) {
               <li>About Us</li>
             </ul>
 
-            <button className={`landing_page_buttom landing_page_buttom--font ${style["menu__buttom"]}`}>
-              Get Started
-            </button>
+            <LoginModal>
+              <button className={`landing_page_buttom landing_page_buttom--font ${style["menu__buttom"]}`}>
+                Get Started
+              </button>
+            </LoginModal>
           </main>
         </section>
       </Modal>
