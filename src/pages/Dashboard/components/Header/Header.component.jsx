@@ -1,4 +1,5 @@
 import style from './Header.module.scss'
+import Modal from "react-modal"
 import Image from 'next/image'
 import logo from '../../../../../public/images/logo.svg'
 import points from '../../../../../public/images/points.svg'
@@ -35,7 +36,25 @@ export default function Header() {
         <i className={`${style["header__profile--arrow"]} ${arrowDirection()}`}></i>
         <Image src={profile}/>
       </figure>
-    </header>
 
+      <Modal
+        className={`${style["modal-container"]} ${style["custom-map-modal"]}`}
+        style={{
+          overlay: {
+            top: 50,
+            backgroundColor: 'rgba(255, 255, 255, 0.8)'
+          }
+        }}
+        isOpen={showBtn}
+        animation={true}
+      >
+        <button className={style["btn-modal"]}>
+          <span>
+            Change to teacher mode
+          </span>
+          <i className={style["btn-modal__arrow"]}></i>
+        </button>
+      </Modal>
+    </header>
   )
 }
