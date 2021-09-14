@@ -14,16 +14,27 @@
     width: 335px;
     height: 163px;
     border-radius: 4px 4px 0px 0px;
+    margin: 12px;
   }
 
   &__info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 30px;
+
+    figure {
+      justify-self: flex-start;
+      margin: 12px;
+    }
 
     button {
       background: #CFC9E9;
       opacity: 0.4;
       border-radius: 4px;
+      margin: 12px;
+      border: none;
+      height: 100%;
 
       span {
         font-family: $font_open_sans;
@@ -48,6 +59,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 160%;
+    margin: 20px 12px;
 
     color: #200E64;
   }
