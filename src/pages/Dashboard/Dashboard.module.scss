@@ -23,5 +23,19 @@
   &__footer {
     grid-area: footer;
     background: #fff;
+    text-align: center;
+
+    font-family: $font_open_sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+    
+    color: #343434;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
   }
 }

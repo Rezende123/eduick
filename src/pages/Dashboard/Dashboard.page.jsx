@@ -11,7 +11,11 @@ export default function Dashboard() {
       <main className={style.content__main}>
       </main>
 
-      <footer className={style.content__footer}></footer>
+      <footer className={style.content__footer}>
+        <p>
+          Copyright © 2020 Eduick. Todos os direitos reservados.
+        </p>
+      </footer>
     </section>
   )
 }
