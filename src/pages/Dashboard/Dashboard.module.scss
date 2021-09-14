@@ -3,7 +3,7 @@
 .content {
   background-image: linear-gradient($color_gradient_primary_top, $color_gradient_primary_bottom);
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
   display: grid;
   grid-template-areas: 
     "header header header"
