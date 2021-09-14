@@ -3,8 +3,16 @@ import Header from './components/Header'
 import Image  from 'next/dist/client/image'
 import fig1 from '../../../public/images/dashboard_yellow.svg'
 import fig2 from '../../../public/images/dashboard_fig2.svg'
+import CardModules from './components/CardModules'
 
 export default function Dashboard() {
+  const cards = []
+  const amountCards = 6
+
+  for (let i = 0; i < amountCards; i++) {
+    cards.push(<CardModules></CardModules>)
+  }
+
   return (
     <section className={style.content}>
       <div className={style.content__header}>
@@ -27,6 +35,9 @@ export default function Dashboard() {
           <figure className={style["content__presentation-card--fig2"]}>
             <Image src={fig2}/>
           </figure>
+        </div>
+        <div className={style.content__cards}>
+          {cards}
         </div>
       </main>
 
