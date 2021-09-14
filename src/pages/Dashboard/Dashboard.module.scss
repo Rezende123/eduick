@@ -101,7 +101,7 @@
   }
 }
 
-@media (max-width: 830px)  {
+@media (max-width: 830px) {
   .content {
     &__footer span {
       display: none;      
@@ -111,10 +111,17 @@
       margin: 20px;
     }
 
+    &__cards {
+      grid-template-columns: none;
+      grid-auto-flow: row;
+      grid-gap: 20px;
+    }
+
     &__presentation-card {
       display: flex;
       flex-direction: column;   
       height: 165px; 
+      width: auto;
 
       &--fig1 {
         width: 64px;
