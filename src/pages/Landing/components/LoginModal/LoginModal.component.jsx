@@ -48,6 +48,12 @@ export default function LoginModal(props) {
                 <input autoComplete="new-password" type={typePassword()} name="password" id="password" />
                 <i className={style["context__field--icon-eye"]} onClick={hidePassword}></i>
               </div>
+              
+              <div className={style["context__field"]}>
+                <button className={`landing_page_buttom landing_page_buttom--font ${style["context__buttom"]}`}>
+                  Login
+                </button>
+              </div>
             </form>
           </main> 
         </section>          
