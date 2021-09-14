@@ -3,8 +3,8 @@
 .header {
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 3fr 5fr 10fr;
-  grid-template-areas: 'points image menu buttom';
+  grid-template-columns: 2fr 3fr 5fr 8fr 3fr;
+  grid-template-areas: 'points image menu btn profile';
 
 
   &__points {
@@ -12,7 +12,7 @@
     height:  22px;
     justify-self: flex-end;
     align-self: center;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
     margin-right: 0px;
   }
 
@@ -48,6 +48,37 @@
       font-size: 14px;
       color: $color_white;
     }
+  }
+
+  &__btn-change {
+    grid-area: btn;
+    justify-self: flex-end;
+    align-self: center;
+
+    background: rgb(32, 14, 100, 0.3);
+    border-radius: 4px;
+    width: 186px;
+    height: 34px;
+    border: none;
+
+    font-family: $font_open_sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
+
+  &__profile {
+    grid-area: profile;
+    justify-self: flex-start;
+    align-self: center;
+    margin: 0px 40px;
   }
   
 }

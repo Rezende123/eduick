@@ -2,6 +2,7 @@ import style from './Header.module.scss'
 import Image from 'next/image'
 import logo from '../../../../../public/images/logo.svg'
 import points from '../../../../../public/images/points.svg'
+import profile from '../../../../../public/images/profile.svg'
 
 export default function Header() {
 
@@ -10,6 +11,7 @@ export default function Header() {
       <figure className={style.header__points}>
         <Image src={points}/>
       </figure>
+      
       <figure className={style.header__image}>
         <Image src={logo}/>
       </figure>
@@ -19,6 +21,14 @@ export default function Header() {
           <li>My Classes</li>
         </ul>
       </menu>
+
+      <button className={style["header__btn-change"]}>
+        Change to teacher mode
+      </button>
+
+      <figure className={style.header__profile}>
+        <Image src={profile}/>
+      </figure>
     </header>
 
   )
