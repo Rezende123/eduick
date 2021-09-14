@@ -13,5 +13,12 @@
     "react-dom": "17.0.2",
     "react-modal": "^3.14.3",
     "sass": "^1.39.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.0"
   }
 }
