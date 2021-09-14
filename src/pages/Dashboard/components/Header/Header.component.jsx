@@ -3,8 +3,13 @@ import Image from 'next/image'
 import logo from '../../../../../public/images/logo.svg'
 import points from '../../../../../public/images/points.svg'
 import profile from '../../../../../public/images/profile.svg'
+import { useState } from 'react'
 
 export default function Header() {
+
+  const [showBtn, setShowBtn] = useState(false)
+  const hideBtn = () => setShowBtn(!showBtn)
+  const arrowDirection = () => showBtn ? style["header__profile--arrow-up"] : style["header__profile--arrow-down"]
 
   return (
     <header className={style.header}>
@@ -26,7 +31,8 @@ export default function Header() {
         Change to teacher mode
       </button>
 
-      <figure className={style.header__profile}>
+      <figure className={style.header__profile} onClick={hideBtn}>
+        <i className={`${style["header__profile--arrow"]} ${arrowDirection()}`}></i>
         <Image src={profile}/>
       </figure>
     </header>

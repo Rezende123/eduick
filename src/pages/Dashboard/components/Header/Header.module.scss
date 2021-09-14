@@ -83,6 +83,20 @@
     justify-self: flex-start;
     align-self: center;
     margin: 0px 40px;
+
+    &--arrow {
+      display: none;
+    }
+
+    &--arrow-up {
+      background: url("../../../../../public/icons/chevron_up.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--arrow-down {
+      background: url("../../../../../public/icons/chevron_down.svg");
+      background-repeat: no-repeat;
+    }
   }
   
 }
@@ -116,6 +130,15 @@
     &__profile {
       align-self: center;
       justify-self: flex-end;
+
+      display: flex;
+      align-items: center;
+
+      &--arrow {
+        display: block;
+        width: 20px;
+        height: 10px;
+      }
     }
   }
 }
