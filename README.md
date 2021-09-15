@@ -4,6 +4,15 @@
 
 ![Layout do eduick](https://raw.githubusercontent.com/edusynch/frontend-challenge/main/.github/eduick.png)
 
+## 📝 Descrevendo Solução
+
+- A aplicação foi feita em [Next.js](https://nextjs.org/) em conjunto com [SASS](https://sass-lang.com/) e um servidor [Express](https://expressjs.com/pt-br/).
+- Para a escrita do estilo nas páginas foram utilizados principios da metodologia **BEM**.
+- Foi desenvolvido um servidor **express** para servir uma api estática que renderiza as páginas da aplicação.
+- O desenvolvimento das páginas foi feito com base na abordagem arquitetural da **componentização**.
+- A ferramenta `eslint` foi utilizada junto ao `prettier` na padronização da escrita dos arquivos `.js` e `.jsx`.
+- O recurso dos **Hooks customizados** foi utilizado para a lógica da responsividade.
+
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
@@ -40,4 +49,5 @@ npm run build
 npm start
 ```
 A aplicação roda na porta `3000`, para acessar a página Landing Page basta navegar até http://localhost:3000 e até http://localhost:3000/Dashboard para acessar o Dashboard
+
 
