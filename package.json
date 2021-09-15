@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:express": "node server/index.js",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "next": "^11.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

@@ -1,8 +1,7 @@
-import Landing from "./Landing"
-import Dashboard from "./Dashboard"
+import Landing from './Landing'
 
 export default function Home() {
   return (
-    <Dashboard></Dashboard>
+    <Landing></Landing>
   )
 }
