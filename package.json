@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev:express": "node server/index.js",
     "build": "next build",
+    "start:express": "node server/index.js",
     "start": "next start"
   },
   "dependencies": {
