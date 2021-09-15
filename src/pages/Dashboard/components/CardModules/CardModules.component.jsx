@@ -1,6 +1,6 @@
 import style from './CardModules.module.scss'
 import stars from '../../../../../public/images/stars.svg'
-import picture from '../../../../../public/images/Rectangle415.png'
+import picture from '../../../../../public/images/Rectangle415.svg'
 import Image from 'next/image'
 
 export default function CardModules() {
